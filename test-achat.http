@@ -1,0 +1,9 @@
+### Test d'achat Woyofal avec REST Client
+
+POST http://localhost:8001/api/achat
+Content-Type: application/json
+
+{
+  "compteur": "CPT10001",
+  "montant": 1000
+}

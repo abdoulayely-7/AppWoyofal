@@ -1,0 +1,28 @@
+{
+    "name": "abdoulayely/projet-appwoyofal",
+    "autoload": {
+        "psr-4": {
+            "App\\Entity\\": "src/entity/",
+            "App\\Ripository\\": "src/ripository/",
+            "App\\Service\\": "src/service/",
+            "App\\Core\\": "app/core/",
+            "App\\Config\\": "app/config",
+            "App\\middlewares\\": "app/config/middlewares/",
+            "App\\Controller\\": "src/Controller/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdoulaye"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "twilio/sdk": "^8.6",
+        "symfony/yaml": "^7.3"
+    },
+    "scripts": {
+        "database:migrate": "php migrations/Migration.php",
+        "database:seed": "php seeders/Seeder.php"
+    }
+}

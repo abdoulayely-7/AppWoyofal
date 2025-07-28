@@ -1,0 +1,23 @@
+core:
+  database: App\Core\Database
+  session: App\Core\Session
+  router: App\Core\Router
+
+abstract:
+  abstractRepository: App\Core\AbstracteRipository
+  abstractService: App\Core\AbstracteService
+  abstractEntity: App\Core\AbstractEntity
+  abstractController: App\Core\AbstracteController
+
+services:
+  achatService: App\Service\AchatService
+  compteurService: App\Service\CompteurService
+  clientService: App\Service\ClientService
+
+controllers:
+  achatController: App\Controller\AchatController
+
+repositories:
+  achatRipository: App\Ripository\AchatRipository
+  compteurRipository: App\Ripository\CompteurRipository
+  clientRipository: App\Ripository\ClientRipository
